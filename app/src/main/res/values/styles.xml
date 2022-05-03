@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+    </style>
+
+    <style name="Button" parent="ThemeOverlay.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/buttonTextDark</item>
+        <item name="android:background">@drawable/bg_button_main</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="Button.TextButton">
+        <item name="android:textColor">@color/buttonTextLight</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+</resources>

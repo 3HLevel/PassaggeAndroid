@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Passagge</string>
+    <string name="main_start_button">Войти с помощью почты</string>
+    <string name="second_start_button">Войти через соцсети</string>
 </resources>

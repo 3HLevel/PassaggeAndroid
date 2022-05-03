@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.enter.start.StartFragment"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_start__start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_start__end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_start__bottom_horizontal_guideline_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_start__top_horizontal_guideline_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/fragment_start__bottom_horizontal_guideline_image"
+        app:layout_constraintEnd_toStartOf="@id/fragment_start__end_guideline"
+        app:layout_constraintStart_toEndOf="@id/fragment_start__start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/fragment_start__top_horizontal_guideline_image"
+        app:srcCompat="@drawable/im_start"
+        android:scaleType="fitCenter"/>
+
+    <Button
+        android:id="@+id/fragment_start__main_button"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:text="@string/main_start_button"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_start__end_guideline"
+        app:layout_constraintStart_toStartOf="@+id/fragment_start__start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/fragment_start__bottom_horizontal_guideline_image"
+        app:layout_constraintBottom_toTopOf="@id/fragment_start__second_button"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/fragment_start__second_button"
+        style="@style/Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/second_start_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_start__end_guideline"
+        app:layout_constraintStart_toStartOf="@+id/fragment_start__start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/fragment_start__main_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
