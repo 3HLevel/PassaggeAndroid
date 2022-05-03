@@ -65,7 +65,7 @@
         app:layout_constraintBottom_toTopOf="@id/fragment_start__second_button"
         app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintVertical_bias="0.35" />
-    
+
     <Button
         android:id="@+id/fragment_start__second_button"
         style="@style/Button.TextButton"
