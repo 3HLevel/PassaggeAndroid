@@ -22,17 +22,30 @@
         app:layout_constraintGuide_percent="0.90"/>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/fragment_start__bottom_horizontal_guideline_image"
+        android:id="@+id/fragment_start__horizontal_center_guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.5"/>
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_start__start_button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.18" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_start__end_button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.82"/>
 
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/fragment_start__bottom_horizontal_guideline_image"
+        app:layout_constraintBottom_toTopOf="@id/fragment_start__horizontal_center_guideline"
         app:layout_constraintEnd_toStartOf="@id/fragment_start__end_guideline"
         app:layout_constraintStart_toEndOf="@id/fragment_start__start_guideline"
         app:layout_constraintTop_toTopOf="parent"
@@ -44,12 +57,11 @@
         style="@style/Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="25dp"
         android:text="@string/main_start_button"
         android:textSize="15sp"
-        app:layout_constraintEnd_toStartOf="@+id/fragment_start__end_guideline"
-        app:layout_constraintStart_toStartOf="@+id/fragment_start__start_guideline"
-        app:layout_constraintTop_toBottomOf="@id/fragment_start__bottom_horizontal_guideline_image"
+        app:layout_constraintEnd_toStartOf="@id/fragment_start__end_button_guideline"
+        app:layout_constraintStart_toStartOf="@id/fragment_start__start_button_guideline"
+        app:layout_constraintTop_toBottomOf="@id/fragment_start__horizontal_center_guideline"
         app:layout_constraintBottom_toTopOf="@id/fragment_start__second_button"
         app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintVertical_bias="0.3" />
@@ -63,7 +75,7 @@
         android:text="@string/second_start_button"
         android:drawableStart="@drawable/ic_inst"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/fragment_start__end_guideline"
-        app:layout_constraintStart_toStartOf="@+id/fragment_start__start_guideline"
+        app:layout_constraintEnd_toStartOf="@id/fragment_start__end_button_guideline"
+        app:layout_constraintStart_toStartOf="@id/fragment_start__start_button_guideline"
         app:layout_constraintTop_toBottomOf="@id/fragment_start__main_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
