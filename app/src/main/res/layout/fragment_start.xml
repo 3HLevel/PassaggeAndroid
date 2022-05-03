@@ -64,18 +64,18 @@
         app:layout_constraintTop_toBottomOf="@id/fragment_start__horizontal_center_guideline"
         app:layout_constraintBottom_toTopOf="@id/fragment_start__second_button"
         app:layout_constraintVertical_chainStyle="packed"
-        app:layout_constraintVertical_bias="0.3" />
-
-
+        app:layout_constraintVertical_bias="0.35" />
+    
     <Button
         android:id="@+id/fragment_start__second_button"
         style="@style/Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/second_start_button"
-        android:drawableStart="@drawable/ic_inst"
+        android:drawableStart="@drawable/ic_inst_14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/fragment_start__end_button_guideline"
         app:layout_constraintStart_toStartOf="@id/fragment_start__start_button_guideline"
         app:layout_constraintTop_toBottomOf="@id/fragment_start__main_button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
