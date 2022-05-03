@@ -12,14 +12,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.15" />
+        app:layout_constraintGuide_percent="0.10" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/fragment_start__end_guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.85"/>
+        app:layout_constraintGuide_percent="0.90"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/fragment_start__bottom_horizontal_guideline_image"
@@ -28,12 +28,6 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.5"/>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/fragment_start__top_horizontal_guideline_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.15"/>
 
     <ImageView
         android:layout_width="0dp"
@@ -41,16 +35,16 @@
         app:layout_constraintBottom_toTopOf="@id/fragment_start__bottom_horizontal_guideline_image"
         app:layout_constraintEnd_toStartOf="@id/fragment_start__end_guideline"
         app:layout_constraintStart_toEndOf="@id/fragment_start__start_guideline"
-        app:layout_constraintTop_toBottomOf="@id/fragment_start__top_horizontal_guideline_image"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/im_start"
-        android:scaleType="fitCenter"/>
+        android:scaleType="fitEnd"/>
 
     <Button
         android:id="@+id/fragment_start__main_button"
         style="@style/Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="15dp"
+        android:layout_marginHorizontal="25dp"
         android:text="@string/main_start_button"
         android:textSize="15sp"
         app:layout_constraintEnd_toStartOf="@+id/fragment_start__end_guideline"
