@@ -1,7 +1,8 @@
-package com.example.passagge.activity.main
+package com.example.passagge.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.Navigation
 import com.example.passagge.R
 
 class MainActivity : AppCompatActivity() {
