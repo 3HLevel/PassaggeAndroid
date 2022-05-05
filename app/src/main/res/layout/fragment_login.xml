@@ -64,6 +64,7 @@
         android:layout_width="0dp"
         android:layout_height="@dimen/_42sdp"
         android:hint="@string/password_edit_text"
+        android:inputType="textPassword"
         android:paddingHorizontal="20dp"
         app:layout_constraintBottom_toTopOf="@+id/fragment_login__horizontal_center_guideline"
         app:layout_constraintEnd_toStartOf="@id/fragment_login__end_edit_text_guideline"
