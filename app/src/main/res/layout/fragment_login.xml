@@ -8,18 +8,18 @@
     android:background="@color/background">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/fragment_login__horizontal_center_guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5"/>
-
-    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/fragment_login__start_edit_text_guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_login__horizontal_button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/fragment_login__end_edit_text_guideline"
@@ -33,17 +33,17 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="bottom|start"
-        android:text="@string/log_in_header"
+        android:text="@string/fragment_login__header"
         android:fontFamily="@font/rubik_bold"
         android:textSize="@dimen/_17sdp"
-        android:layout_marginBottom="25dp"
-        android:paddingHorizontal="10dp"
+        android:layout_marginBottom="@dimen/_21sdp"
+        android:paddingHorizontal="@dimen/_7sdp"
         app:layout_constraintEnd_toStartOf="@id/fragment_login__end_edit_text_guideline"
         app:layout_constraintStart_toEndOf="@id/fragment_login__start_edit_text_guideline"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/fragment_login__email"
         app:layout_constraintVertical_chainStyle="packed"
-        app:layout_constraintVertical_bias="0.9"/>
+        app:layout_constraintVertical_bias="0.60"/>
 
     <EditText
         style="@style/EditText"
@@ -51,8 +51,8 @@
         android:layout_width="0dp"
         android:layout_height="@dimen/_42sdp"
         android:hint="@string/email_edit_text"
-        android:paddingHorizontal="20dp"
-        android:layout_marginBottom="15dp"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_11sdp"
         app:layout_constraintEnd_toStartOf="@id/fragment_login__end_edit_text_guideline"
         app:layout_constraintStart_toEndOf="@id/fragment_login__start_edit_text_guideline"
         app:layout_constraintTop_toBottomOf="@id/fragment_login__header"
@@ -65,8 +65,8 @@
         android:layout_height="@dimen/_42sdp"
         android:hint="@string/password_edit_text"
         android:inputType="textPassword"
-        android:paddingHorizontal="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/fragment_login__horizontal_center_guideline"
+        android:paddingHorizontal="@dimen/_16sdp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_login__horizontal_button_guideline"
         app:layout_constraintEnd_toStartOf="@id/fragment_login__end_edit_text_guideline"
         app:layout_constraintStart_toEndOf="@id/fragment_login__start_edit_text_guideline"
         app:layout_constraintTop_toBottomOf="@id/fragment_login__email" />
@@ -75,22 +75,21 @@
         android:id="@+id/fragment_login__first_button"
         style="@style/Button"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/fragment_log_in__first_button"
+        android:layout_height="@dimen/_37sdp"
+        android:text="@string/fragment_login__first_button"
         app:layout_constraintEnd_toStartOf="@id/fragment_login__end_edit_text_guideline"
         app:layout_constraintStart_toStartOf="@id/fragment_login__start_edit_text_guideline"
-        app:layout_constraintTop_toBottomOf="@id/fragment_login__horizontal_center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/fragment_login__horizontal_button_guideline"
         app:layout_constraintBottom_toTopOf="@id/fragment_login__second_button"
         app:layout_constraintVertical_chainStyle="packed"
-        app:layout_constraintVertical_bias="0.30"
-        app:layout_constraintHorizontal_chainStyle="packed"/>
+        app:layout_constraintVertical_bias="0"/>
 
     <Button
         android:id="@+id/fragment_login__second_button"
         style="@style/Button.TextButton"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/fragment_log_in__second_button"
+        android:layout_height="@dimen/_37sdp"
+        android:text="@string/fragment_login__second_button"
         app:layout_constraintEnd_toStartOf="@id/fragment_login__end_edit_text_guideline"
         app:layout_constraintStart_toStartOf="@id/fragment_login__start_edit_text_guideline"
         app:layout_constraintBottom_toBottomOf="parent"
