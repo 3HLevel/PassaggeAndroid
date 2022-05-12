@@ -110,7 +110,7 @@
         app:layout_constraintStart_toStartOf="@id/fragment_reg__start_edit_text_guideline"
         app:layout_constraintTop_toBottomOf="@id/fragment_reg__first_button"
         app:layout_constraintVertical_chainStyle="packed"
-        app:layout_constraintVertical_bias="0.8"/>
+        app:layout_constraintVertical_bias="0.75"/>
 
     <TextView
         android:id="@+id/fragment_reg__text_evidence"
@@ -121,7 +121,7 @@
         android:lines="3"
         android:gravity="center"
         android:paddingHorizontal="@dimen/_7sdp"
-        android:text="Игра minecraft была выпущена в 2009 году"
+        tools:text="Игра minecraft была выпущенав 2009 году и куплена компенией microsoft в 2018 году"
         app:layout_constraintEnd_toStartOf="@id/fragment_reg__end_edit_text_guideline"
         app:layout_constraintStart_toStartOf="@id/fragment_reg__start_edit_text_guideline"
         app:layout_constraintBottom_toBottomOf="parent"

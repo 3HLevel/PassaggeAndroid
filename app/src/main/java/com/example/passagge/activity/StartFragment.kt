@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.passagge.R
 
 class StartFragment : Fragment() {
+    lateinit var firstButton: Button
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -19,8 +20,8 @@ class StartFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val firstButton = view.findViewById<Button>(R.id.fragment_start__first_button)
-        firstButton?.setOnClickListener {
+        firstButton = view.findViewById<Button>(R.id.fragment_start__first_button)
+        firstButton.setOnClickListener {
             findNavController().navigate(R.id.login_fragment)
         }
     }
