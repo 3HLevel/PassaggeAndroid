@@ -35,7 +35,7 @@
         android:gravity="bottom|start"
         android:text="@string/fragment_reg__header"
         android:fontFamily="@font/rubik_bold"
-        android:textSize="@dimen/_17sdp"
+        android:textSize="@dimen/_17ssp"
         android:layout_marginBottom="@dimen/_21sdp"
         android:paddingHorizontal="@dimen/_7sdp"
         app:layout_constraintEnd_toStartOf="@id/fragment_reg__end_edit_text_guideline"
@@ -114,7 +114,7 @@
 
     <TextView
         android:id="@+id/fragment_reg__text_evidence"
-        android:textSize="@dimen/_10sdp"
+        android:textSize="@dimen/_10ssp"
         android:textColor="@color/buttonTextLight"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
