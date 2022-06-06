@@ -1,10 +1,12 @@
 package com.example.passagge.activity
 
-import android.app.Application
-import android.widget.Button
-import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.MutableLiveData
+import android.view.View
+import androidx.lifecycle.ViewModel
+import androidx.navigation.findNavController
+import com.example.passagge.R
 
-class StartViewModel(application: Application): AndroidViewModel(application) {
-
+class StartViewModel: ViewModel() {
+    fun navigateToLogin(v: View) {
+        v.findNavController().navigate(R.id.login_fragment)
+    }
 }

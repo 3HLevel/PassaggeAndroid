@@ -4,25 +4,27 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleOwner
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.passagge.R
+import com.example.passagge.databinding.FragmentStartBinding
 
 class StartFragment : Fragment() {
-    lateinit var firstButton: Button
+    private lateinit var binding: FragmentStartBinding
+    private val v: StartViewModel by viewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_start, container, false)
+    ): View {
+        binding = FragmentStartBinding.inflate(layoutInflater)
+        binding.fragmentStartFirstButton.setOnClickListener() {
+            v.navigateToLogin(binding.root)
+        }
+        return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        firstButton = view.findViewById<Button>(R.id.fragment_start__first_button)
-        firstButton.setOnClickListener {
-            findNavController().navigate(R.id.login_fragment)
-        }
-    }
 }
