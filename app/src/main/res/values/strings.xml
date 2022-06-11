@@ -10,4 +10,9 @@
     <string name="fragment_login__second_button">или зарегистрируйтесь</string>
     <string name="fragment_reg__header">Пройдите\nрегистрацию</string>
     <string name="fragment_reg__interesting">Интересное:</string>
+    <string name="menu_home">home</string>
+    <string name="menu_create">create</string>
+    <string name="menu_profile">profile</string>
+    <string name="menu_search">search</string>
+    <string name="menu_likes">likes</string>
 </resources>

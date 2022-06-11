@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/_10sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_post__header"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_37sdp"
+        android:background="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/item_post__main_image"
+        android:paddingHorizontal="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_post__avatar"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:src="@drawable/im_avatar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_post__header_info"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintHorizontal_bias="0"/>
+
+        <LinearLayout
+            android:id="@+id/item_post__header_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/item_post__avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/item_post__nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_medium"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/_10ssp"
+                tools:text="Lololoshka"
+                android:layout_marginBottom="@dimen/_1sdp"/>
+
+            <TextView
+                android:id="@+id/item_post__time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:textSize="@dimen/_8ssp"
+                android:textColor="@color/colorTextGray"
+                android:background="@drawable/bg_under_text"
+                tools:text="10:10"
+                android:paddingHorizontal="@dimen/_3sdp"
+                android:paddingVertical="@dimen/_1sdp"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/item_post__button_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_more"
+            app:layout_constraintHorizontal_bias="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/item_post__main_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_post__header"
+        app:layout_constraintBottom_toTopOf="@id/item_post__footer"
+        android:src="@drawable/im_post"
+        android:scaleType="centerCrop"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_post__footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_post__main_image"
+        android:background="@color/background"
+        android:paddingVertical="@dimen/_8sdp">
+
+        <TextView
+            android:id="@+id/item_post__description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/rubik_regular"
+            android:textSize="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            tools:text="Lololoshka: Компьютерная инди-игра в жанре песочницы, созданная шведским программистом Маркусом Перссоном и выпущенная его компанией Mojang AB..."/>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_post__description"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:id="@+id/item_post__button_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_under_text"
+                android:padding="@dimen/_4sdp">
+
+                <ImageButton
+                    android:id="@+id/item_post__like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    app:srcCompat="@drawable/ic_heart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_toEndOf="@id/item_post__like"
+                    android:fontFamily="@font/rubik_regular"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="@dimen/_9ssp"
+                    tools:text="1,9k" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/item_post__button_like"
+                android:background="@drawable/bg_under_text"
+                android:padding="@dimen/_4sdp"
+                app:srcCompat="@drawable/ic_share"
+                android:layout_marginStart="@dimen/_5sdp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
