@@ -1,4 +1,4 @@
-package com.example.passagge.presentation.entry.start
+package com.example.passagge.ui.entry.start
 
 import android.os.Bundle
 import android.view.LayoutInflater

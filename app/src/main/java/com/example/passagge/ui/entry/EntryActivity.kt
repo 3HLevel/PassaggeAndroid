@@ -1,4 +1,4 @@
-package com.example.passagge.presentation.entry
+package com.example.passagge.ui.entry
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

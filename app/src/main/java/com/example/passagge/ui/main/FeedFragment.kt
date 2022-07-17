@@ -1,11 +1,10 @@
-package com.example.passagge.presentation.main
+package com.example.passagge.ui.main
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.passagge.R
 import com.example.passagge.databinding.FragmentFeedBinding
 
 class FeedFragment : Fragment() {
@@ -15,10 +14,10 @@ class FeedFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentFeedBinding.inflate(layoutInflater)
         binding.fragmentFeedRecycler
-        return inflater.inflate(R.layout.fragment_feed, container, false)
+        return binding.root
     }
 
 }

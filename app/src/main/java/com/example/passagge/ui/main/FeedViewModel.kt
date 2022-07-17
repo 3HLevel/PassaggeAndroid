@@ -1,4 +1,4 @@
-package com.example.passagge.presentation.main
+package com.example.passagge.ui.main
 
 import androidx.lifecycle.ViewModel
 
