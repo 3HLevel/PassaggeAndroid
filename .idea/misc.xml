@@ -4,42 +4,30 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Semen/Desktop/Folder/android_project/PassaggeAndroid/app/src/main/res/layout/activity_main.xml" value="0.1490036231884058" />
+        <entry key="..\:/Users/Semen/Desktop/Folder/android_project/PassaggeAndroid/app/src/main/res/layout/fragment_feed.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_project/PassaggeAndroid/app/src/main/res/layout/fragment_login.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_project/PassaggeAndroid/app/src/main/res/layout/fragment_reg.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_project/PassaggeAndroid/app/src/main/res/layout/fragment_start.xml" value="0.1490036231884058" />
+        <entry key="..\:/Users/Semen/Desktop/Folder/android_project/PassaggeAndroid/app/src/main/res/layout/item_post.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.309" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/bg_button_main.xml" value="0.309" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/bg_edit_text.xml" value="0.313" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/bg_under_text.xml" value="0.289" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/bg_under_view.xml" value="0.289" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/button_menu_home_states.xml" value="0.289" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/button_menu_home_status.xml" value="0.289" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/ic_heart.xml" value="0.289" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/ic_im_start.xml" value="0.25" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/ic_inst.xml" value="0.309" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/ic_inst_14dp.xml" value="0.313" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/ic_inst_15dp.xml" value="0.309" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/ic_inst_fragment_start.xml" value="0.313" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.309" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/ic_menu_home_disabled.xml" value="0.289" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/ic_menu_likes.xml" value="0.289" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/ic_more.xml" value="0.289" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/ic_share.xml" value="0.289" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/im_start.xml" value="0.309" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/drawable/sh_button_round_corners.xml" value="0.309" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/font/font_rubik.xml" value="0.33421052631578946" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/layout-v26/fragment_log_in.xml" value="0.3428442028985507" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/layout-v28/item_post.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/layout/activity_enter.xml" value="0.3087719298245614" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/layout/activity_entry.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/layout/fragment_feed.xml" value="0.33" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/layout/fragment_log_in.xml" value="0.25" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/layout/fragment_login.xml" value="0.33" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/layout/fragment_reg.xml" value="0.22" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/layout/fragment_start.xml" value="0.2" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/layout/item_post.xml" value="0.33" />
-        <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/menu/bottom_menu.xml" value="0.365625" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_projects/PassaggeAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.313" />
       </map>
     </option>
