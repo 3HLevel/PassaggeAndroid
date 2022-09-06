@@ -10,10 +10,10 @@
         android:title="@string/menu_search"
         android:icon="@drawable/ic_menu_search"/>
 
-    <item
-        android:id="@+id/menu_create"
-        android:title="@string/menu_create"
-        android:icon="@drawable/ic_menu_create"/>
+<!--    <item-->
+<!--        android:id="@+id/menu_create"-->
+<!--        android:title="@string/menu_create"-->
+<!--        android:icon="@drawable/ic_menu_create"/>-->
 
     <item
         android:id="@+id/menu_likes"

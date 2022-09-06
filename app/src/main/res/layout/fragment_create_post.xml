@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.main.feed.FeedFragment"
-    android:background="@color/colorPrimaryLight">
+    tools:context=".ui.main.create.CreatePostFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/fragment_create_post__toolbar"
@@ -15,9 +14,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/fragment_feed__recycler"
         android:paddingVertical="@dimen/_8sdp"
-        android:paddingHorizontal="@dimen/_10sdp">
+        android:paddingHorizontal="@dimen/_5sdp">
 
         <LinearLayout
             android:id="@+id/fragment_create_post__title_layout"
@@ -31,25 +29,21 @@
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             android:gravity="center">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/fragment_feed__avatar"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"
-                android:src="@drawable/im_avatar"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/item_post__header_info"
-                app:layout_constraintHorizontal_chainStyle="packed"
-                app:layout_constraintHorizontal_bias="0"
-                android:layout_marginEnd="@dimen/_10sdp"/>
+            <ImageButton
+                android:id="@+id/fragment_create_post__cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:srcCompat="@drawable/ic_cancel"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/_5sdp"/>
 
             <TextView
                 android:id="@+id/fragment_create_post__title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Главная"
-                android:textSize="@dimen/_15ssp"
+                android:text="Новый пост"
+                android:textSize="@dimen/_13ssp"
                 android:fontFamily="@font/rubik_medium" />
         </LinearLayout>
 
@@ -65,36 +59,15 @@
             app:layout_constraintStart_toEndOf="@id/fragment_create_post__title_layout">
 
             <ImageButton
-                android:id="@+id/fragment_create_post__cancel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_10sdp"
-                app:srcCompat="@drawable/ic_create_post"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="@dimen/_7sdp"/>
-
-            <ImageButton
                 style="@style/Button"
                 android:id="@+id/fragment_create_post__confirm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_menu_search"
+                app:srcCompat="@drawable/ic_confirm"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="@dimen/_7sdp"/>
+                android:padding="@dimen/_5sdp"/>
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/fragment_feed__recycler"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:clipToPadding="false"
-        android:paddingTop="@dimen/_10sdp"
-        tools:listitem="@layout/item_post"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fragment_create_post__toolbar"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

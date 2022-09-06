@@ -2,45 +2,20 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_navigation"
-    app:startDestination="@id/start_fragment">
-
+    android:id="@+id/main_post_navigation"
+    app:startDestination="@id/feedFragment">
     <fragment
-        android:id="@+id/start_fragment"
-        android:name="com.example.passagge.ui.entry.start.StartFragment"
-        android:label="fragment_start"
-        tools:layout="@layout/fragment_start">
+        android:id="@+id/feedFragment"
+        android:name="com.example.passagge.ui.main.feed.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
         <action
-            android:id="@+id/action_start_fragment_to_login_fragment"
-            app:destination="@id/login_fragment" />
+            android:id="@+id/action_feedFragment2_to_createPostFragment2"
+            app:destination="@id/createPostFragment" />
     </fragment>
-
     <fragment
-        android:id="@+id/login_fragment"
-        android:name="com.example.passagge.ui.entry.login.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login">
-        <action
-            android:id="@+id/action_login_fragment_to_reg_fragment"
-            app:destination="@id/reg_fragment" />
-        <action
-            android:id="@+id/action_login_fragment_to_mainActivity"
-            app:destination="@id/mainActivity" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/reg_fragment"
-        android:name="com.example.passagge.ui.entry.reg.RegFragment"
-        android:label="fragment_reg"
-        tools:layout="@layout/fragment_reg" >
-        <action
-            android:id="@+id/action_reg_fragment_to_mainActivity"
-            app:destination="@id/mainActivity" />
-    </fragment>
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.passagge.ui.main.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
-
+        android:id="@+id/createPostFragment"
+        android:name="com.example.passagge.ui.main.create.CreatePostFragment"
+        android:label="fragment_create_post"
+        tools:layout="@layout/fragment_create_post" />
 </navigation>

@@ -47,8 +47,8 @@
                 android:fontFamily="@font/rubik_medium"
                 android:textColor="@color/colorTextLight"
                 android:textSize="@dimen/_10ssp"
-                tools:text="Lololoshka"
-                android:layout_marginBottom="@dimen/_1sdp"/>
+                tools:text="Vymanvar"
+                android:layout_marginBottom="@dimen/_2sdp"/>
 
             <TextView
                 android:id="@+id/item_post__time"
@@ -109,7 +109,7 @@
             android:fontFamily="@font/rubik_regular"
             android:textSize="@dimen/_10sdp"
             android:paddingHorizontal="@dimen/_10sdp"
-            tools:text="Lololoshka: Компьютерная инди-игра в жанре песочницы, созданная шведским программистом Маркусом Перссоном и выпущенная его компанией Mojang AB..."/>
+            tools:text="Vymanvar: Компьютерная инди-игра в жанре песочницы, созданная шведским программистом Маркусом Перссоном и выпущенная его компанией Mojang AB..."/>
 
         <RelativeLayout
             android:layout_marginTop="@dimen/_8sdp"
@@ -142,7 +142,7 @@
                     android:layout_toEndOf="@id/item_post__like"
                     android:fontFamily="@font/rubik_regular"
                     android:textColor="@color/colorTextGray"
-                    android:textSize="@dimen/_9ssp"
+                    android:textSize="@dimen/_8ssp"
                     tools:text="1,9k" />
             </RelativeLayout>
 
