@@ -1,6 +1,6 @@
 package com.example.passagge.data.di
 
-import com.example.passagge.data.api.retrofit.GamesLibraryApiService
+import com.example.passagge.data.api.retrofit.CheapSharkApiService
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
@@ -50,6 +50,6 @@ class RetrofitModule {
     }
 
     @Provides
-    fun provideApiService(retrofit: Retrofit): GamesLibraryApiService =
-        retrofit.create(GamesLibraryApiService::class.java)
+    fun provideApiService(retrofit: Retrofit): CheapSharkApiService =
+        retrofit.create(CheapSharkApiService::class.java)
 }

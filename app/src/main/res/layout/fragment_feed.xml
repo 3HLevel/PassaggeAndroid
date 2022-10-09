@@ -10,13 +10,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/fragment_create_post__toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_44sdp"
+        android:layout_height="48dp"
         android:background="@color/colorPrimary"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/fragment_feed__recycler"
-        android:paddingVertical="@dimen/_8sdp"
         android:paddingHorizontal="@dimen/_10sdp">
 
         <LinearLayout
@@ -31,25 +30,25 @@
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             android:gravity="center">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/fragment_feed__avatar"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"
-                android:src="@drawable/im_avatar"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/item_post__header_info"
-                app:layout_constraintHorizontal_chainStyle="packed"
-                app:layout_constraintHorizontal_bias="0"
-                android:layout_marginEnd="@dimen/_10sdp"/>
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/fragment_feed__avatar"-->
+<!--                android:layout_width="@dimen/_26sdp"-->
+<!--                android:layout_height="@dimen/_26sdp"-->
+<!--                android:src="@drawable/im_avatar"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintEnd_toStartOf="@id/item_post__header_info"-->
+<!--                app:layout_constraintHorizontal_chainStyle="packed"-->
+<!--                app:layout_constraintHorizontal_bias="0" />-->
 
             <TextView
                 android:id="@+id/fragment_create_post__title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Главная"
-                android:textSize="@dimen/_15ssp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:textSize="21sp"
                 android:fontFamily="@font/rubik_medium" />
         </LinearLayout>
 
@@ -68,7 +67,7 @@
                 android:id="@+id/fragment_create_post__cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
                 app:srcCompat="@drawable/ic_create_post"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:padding="@dimen/_7sdp"/>

@@ -9,11 +9,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/fragment_create_post__toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_44sdp"
+        android:layout_height="@dimen/_45sdp"
         android:background="@color/colorPrimary"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fragment_create_post__edit_text"
         android:paddingVertical="@dimen/_8sdp"
         android:paddingHorizontal="@dimen/_5sdp">
 
@@ -33,7 +34,6 @@
                 android:id="@+id/fragment_create_post__cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_5sdp"
                 app:srcCompat="@drawable/ic_cancel"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:padding="@dimen/_5sdp"/>
@@ -43,11 +43,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Новый пост"
+                android:paddingHorizontal="@dimen/_5sdp"
                 android:textSize="@dimen/_13ssp"
                 android:fontFamily="@font/rubik_medium" />
         </LinearLayout>
-
-
 
         <LinearLayout
             android:id="@+id/fragment_create_post__buttons_layout"
@@ -70,4 +69,40 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <EditText
+        android:id="@+id/fragment_create_post__edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/colorTextGray"
+        android:padding="@dimen/_10sdp"
+        android:gravity="top"
+        android:hint="В какую игру играли сегодня?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fragment_create_post__toolbar_create"
+        app:layout_constraintTop_toBottomOf="@id/fragment_create_post__toolbar"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/white"
+        android:id="@+id/fragment_create_post__toolbar_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragment_create_post__edit_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+<!--        <Button
+            android:id="@+id/fragment_create_post__button_add_pictures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="добавить картинку"
+            android:textColor="@color/colorTextGray"/>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

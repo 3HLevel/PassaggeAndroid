@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
 import com.example.passagge.R
+import com.example.passagge.data.local.game.post.room.dao.PostEntity
 import com.example.passagge.databinding.FragmentCreatePostBinding
 
 class CreatePostFragment : Fragment() {
@@ -22,6 +24,9 @@ class CreatePostFragment : Fragment() {
         binding = FragmentCreatePostBinding.inflate(layoutInflater)
         binding.fragmentCreatePostCancel.setOnClickListener {
             binding.root.findNavController().popBackStack()
+        }
+        binding.fragmentCreatePostConfirm.setOnClickListener {
+            viewModel.createPost(binding.fragmentCreatePostEditText)
         }
         return binding.root
     }
