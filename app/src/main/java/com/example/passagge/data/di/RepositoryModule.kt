@@ -5,8 +5,8 @@ import com.example.passagge.data.api.retrofit.CheapSharkApiService
 import com.example.passagge.data.api.retrofit.CheapSharkExternalDataSource
 import com.example.passagge.data.api.retrofit.CheapSharkRetrofitDataSource
 import com.example.passagge.data.local.base.PostRoomDataBase
-import com.example.passagge.data.local.game.post.room.PostLocalDataSource
-import com.example.passagge.data.local.game.post.room.RoomPostLocalDataSource
+import com.example.passagge.data.local.post.room.PostLocalDataSource
+import com.example.passagge.data.local.post.room.RoomPostLocalDataSource
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -22,7 +22,11 @@ class LoginFragment : Fragment() {
             viewModel.navToReg(binding.root)
         }
         binding.fragmentLoginFirstButton.setOnClickListener {
-            viewModel.navToMain(binding.root)
+            viewModel.signInUser(
+                binding.fragmentLoginEmail.text.toString(),
+                binding.fragmentLoginPassword.text.toString(),
+                binding.root
+            )
         }
         return binding.root
     }

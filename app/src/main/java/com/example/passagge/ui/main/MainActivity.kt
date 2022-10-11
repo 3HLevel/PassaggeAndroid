@@ -10,7 +10,6 @@ import com.example.passagge.R
 import com.example.passagge.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding

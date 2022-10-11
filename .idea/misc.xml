@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Khhha/Desktop/Folder/android_studio_projects/PassaggeAndroid/app/src/main/res/drawable/bg_under_text.xml" value="0.192" />
+        <entry key="..\:/Users/Khhha/Desktop/Folder/android_studio_projects/PassaggeAndroid/app/src/main/res/drawable/ic_confirm.xml" value="0.192" />
+        <entry key="..\:/Users/Khhha/Desktop/Folder/android_studio_projects/PassaggeAndroid/app/src/main/res/drawable/ic_create_post.xml" value="0.192" />
+        <entry key="..\:/Users/Khhha/Desktop/Folder/android_studio_projects/PassaggeAndroid/app/src/main/res/drawable/ic_menu_search.xml" value="0.192" />
+        <entry key="..\:/Users/Khhha/Desktop/Folder/android_studio_projects/PassaggeAndroid/app/src/main/res/drawable/ic_more.xml" value="0.192" />
+        <entry key="..\:/Users/Khhha/Desktop/Folder/android_studio_projects/PassaggeAndroid/app/src/main/res/layout/activity_main.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/Khhha/Desktop/Folder/android_studio_projects/PassaggeAndroid/app/src/main/res/layout/fragment_create_post.xml" value="0.33" />
+        <entry key="..\:/Users/Khhha/Desktop/Folder/android_studio_projects/PassaggeAndroid/app/src/main/res/layout/fragment_feed.xml" value="0.33" />
+        <entry key="..\:/Users/Khhha/Desktop/Folder/android_studio_projects/PassaggeAndroid/app/src/main/res/layout/fragment_reg.xml" value="0.14166666666666666" />
+        <entry key="..\:/Users/Khhha/Desktop/Folder/android_studio_projects/PassaggeAndroid/app/src/main/res/layout/item_post.xml" value="0.18" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_project/PassaggeAndroid/app/src/main/res/drawable/bg_button_main.xml" value="0.1465" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_project/PassaggeAndroid/app/src/main/res/drawable/bg_edit_text.xml" value="0.1465" />
         <entry key="..\:/Users/Semen/Desktop/Folder/android_project/PassaggeAndroid/app/src/main/res/drawable/bg_under_text.xml" value="0.1465" />

@@ -9,14 +9,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/fragment_create_post__toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_45sdp"
+        android:layout_height="56dp"
         android:background="@color/colorPrimary"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/fragment_create_post__edit_text"
-        android:paddingVertical="@dimen/_8sdp"
-        android:paddingHorizontal="@dimen/_5sdp">
+        android:paddingHorizontal="20dp">
 
         <LinearLayout
             android:id="@+id/fragment_create_post__title_layout"
@@ -35,16 +34,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_cancel"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="@dimen/_5sdp"/>
+                android:background="?attr/selectableItemBackgroundBorderless" />
 
             <TextView
                 android:id="@+id/fragment_create_post__title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Новый пост"
-                android:paddingHorizontal="@dimen/_5sdp"
-                android:textSize="@dimen/_13ssp"
+                android:paddingHorizontal="13dp"
+                android:textSize="16sp"
                 android:fontFamily="@font/rubik_medium" />
         </LinearLayout>
 
@@ -63,8 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/ic_confirm"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="@dimen/_5sdp"/>
+                android:background="?attr/selectableItemBackgroundBorderless" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -75,9 +72,9 @@
         android:layout_height="0dp"
         android:backgroundTint="@color/white"
         android:background="@color/white"
-        android:textSize="@dimen/_13ssp"
+        android:textSize="16sp"
         android:textColor="@color/colorTextGray"
-        android:padding="@dimen/_10sdp"
+        android:padding="13dp"
         android:gravity="top"
         android:hint="В какую игру играли сегодня?"
         app:layout_constraintStart_toStartOf="parent"
