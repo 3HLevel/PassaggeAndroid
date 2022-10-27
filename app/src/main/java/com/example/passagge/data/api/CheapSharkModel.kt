@@ -1,6 +1,6 @@
 package com.example.passagge.data.api
 
-data class GamesLibraryModel (
+data class CheapSharkModel (
     var gameID: String,
     var steamAppID: String,
     var cheapest: String,

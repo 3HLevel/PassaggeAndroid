@@ -4,30 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    android:paddingBottom="@dimen/_10sdp">
+    android:paddingBottom="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/item_post__header"
         android:layout_width="0dp"
-        android:layout_height="@dimen/_37sdp"
+        android:layout_height="56dp"
         android:background="@color/background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/item_post__main_image"
-        android:paddingHorizontal="@dimen/_5sdp">
+        android:paddingHorizontal="10dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/item_post__avatar"
-            android:layout_width="@dimen/_28sdp"
-            android:layout_height="@dimen/_28sdp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
             android:src="@drawable/im_avatar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="@id/item_post__header_info"
             app:layout_constraintHorizontal_chainStyle="packed"
-            app:layout_constraintHorizontal_bias="0"/>
+            app:layout_constraintHorizontal_bias="0" />
 
         <LinearLayout
             android:id="@+id/item_post__header_info"
@@ -38,7 +38,7 @@
             app:layout_constraintStart_toEndOf="@id/item_post__avatar"
             app:layout_constraintTop_toTopOf="parent"
             android:orientation="vertical"
-            android:layout_marginStart="@dimen/_5sdp">
+            android:layout_marginStart="6dp">
 
             <TextView
                 android:id="@+id/item_post__nickname"
@@ -46,9 +46,9 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/rubik_medium"
                 android:textColor="@color/colorTextLight"
-                android:textSize="@dimen/_10ssp"
+                android:textSize="13sp"
                 tools:text="Vymanvar"
-                android:layout_marginBottom="@dimen/_2sdp"/>
+                android:layout_marginBottom="3dp"/>
 
             <TextView
                 android:id="@+id/item_post__time"
@@ -68,13 +68,14 @@
             android:id="@+id/item_post__button_more"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/transparent"
+            android:background="?attr/selectableItemBackgroundBorderless"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/ic_more"
-            app:layout_constraintHorizontal_bias="1" />
+            app:layout_constraintHorizontal_bias="1"
+            android:padding="2dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -97,7 +98,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/item_post__main_image"
         android:background="@color/background"
-        android:paddingVertical="@dimen/_8sdp">
+        android:paddingVertical="10dp">
 
         <TextView
             android:id="@+id/item_post__description"
@@ -107,24 +108,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:fontFamily="@font/rubik_regular"
-            android:textSize="@dimen/_10sdp"
-            android:paddingHorizontal="@dimen/_10sdp"
+            android:textSize="13sp"
+            android:paddingHorizontal="10dp"
             tools:text="Vymanvar: Компьютерная инди-игра в жанре песочницы, созданная шведским программистом Маркусом Перссоном и выпущенная его компанией Mojang AB..."/>
 
         <RelativeLayout
-            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/item_post__description"
-            android:paddingHorizontal="@dimen/_10sdp">
+            android:paddingHorizontal="10dp">
 
             <RelativeLayout
                 android:id="@+id/item_post__button_like"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="25dp"
                 android:background="@drawable/bg_under_text"
-                android:padding="@dimen/_4sdp">
+                android:padding="5dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center">
 
                 <ImageButton
                     android:id="@+id/item_post__like"
@@ -138,22 +142,23 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_gravity="center"
-                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginStart="4dp"
                     android:layout_toEndOf="@id/item_post__like"
                     android:fontFamily="@font/rubik_regular"
+                    android:text="1,9k"
                     android:textColor="@color/colorTextGray"
-                    android:textSize="@dimen/_8ssp"
-                    tools:text="1,9k" />
+                    android:textSize="13sp" />
             </RelativeLayout>
 
             <ImageButton
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="6dp"
                 android:layout_toEndOf="@id/item_post__button_like"
                 android:background="@drawable/bg_under_text"
-                android:padding="@dimen/_4sdp"
-                app:srcCompat="@drawable/ic_share"
-                android:layout_marginStart="@dimen/_5sdp"/>
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_share" />
 
         </RelativeLayout>
 

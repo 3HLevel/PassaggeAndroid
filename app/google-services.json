@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "995954679719",
+    "firebase_url": "https://passagge-de991-default-rtdb.firebaseio.com",
+    "project_id": "passagge-de991",
+    "storage_bucket": "passagge-de991.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995954679719:android:5bc75d28424b2a29b96082",
+        "android_client_info": {
+          "package_name": "com.example.passagge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995954679719-7huacihkslc1smta4ldbj4talhdbci0f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.passagge",
+            "certificate_hash": "93f251f63ed138e4308c7a0cf4c6f796cf858086"
+          }
+        },
+        {
+          "client_id": "995954679719-ltn4gkhb0fgagincjvopjv2taotogvmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn_F00es7HM4VmT7Fdhoccm3uOe5g7Br4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "995954679719-ltn4gkhb0fgagincjvopjv2taotogvmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
