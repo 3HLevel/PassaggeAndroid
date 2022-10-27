@@ -10,4 +10,6 @@ interface PostLocalDataSource {
 
     suspend fun savePost(post: PostEntity)
 
+    suspend fun deletePost(post: PostEntity)
+
 }

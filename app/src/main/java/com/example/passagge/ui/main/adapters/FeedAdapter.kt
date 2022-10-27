@@ -6,14 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.passagge.R
 import com.example.passagge.data.local.post.room.dao.PostEntity
+import java.util.*
 
 class FeedAdapter(
     postList: List<PostEntity>,
     context: Context
-): RecyclerView.Adapter<FeedAdapter.FeedViewHolder>() {
+): RecyclerView.Adapter<FeedAdapter.FeedViewHolder>(), ItemTouchHelperAdapter {
     private var postList: List<PostEntity>
     private val context: Context
 
@@ -71,6 +73,14 @@ class FeedAdapter(
             }
             */
         }
+    }
+
+    override fun onItemMove(fromPosition: Int, toPosition: Int) {
+        TODO("Not yet implemented")
+    }
+
+    override fun onItemDismiss(position: Int) {
+        TODO("Not yet implemented")
     }
 
 }

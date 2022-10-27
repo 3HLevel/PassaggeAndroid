@@ -15,4 +15,8 @@ class RoomPostLocalDataSource(private val postDao: PostDao): PostLocalDataSource
     override suspend fun savePost(post: PostEntity) {
         return postDao.savePost(post)
     }
+
+    override suspend fun deletePost(post: PostEntity) {
+        return postDao.deletePost(post)
+    }
 }
