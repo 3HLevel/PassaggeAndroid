@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/fragment_feed__recycler"
-        android:paddingHorizontal="20dp">
+        android:paddingHorizontal="10dp">
 
         <LinearLayout
             android:id="@+id/fragment_create_post__title_layout"
@@ -67,19 +67,19 @@
                 android:id="@+id/fragment_create_post__cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                app:srcCompat="@drawable/ic_create_post"
+                app:srcCompat="@drawable/ic_create"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="1dp"/>
+                android:padding="10dp"
+                android:layout_marginEnd="5dp"/>
 
             <ImageButton
                 style="@style/Button"
                 android:id="@+id/fragment_create_post__confirm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_menu_search"
+                app:srcCompat="@drawable/ic_search"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="1dp"/>
+                android:padding="10dp"/>
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

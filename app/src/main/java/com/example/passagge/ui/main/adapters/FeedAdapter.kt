@@ -6,22 +6,26 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.passagge.R
+import com.example.passagge.data.api.PostRepository
 import com.example.passagge.data.local.post.room.dao.PostEntity
-import java.util.*
+import kotlinx.coroutines.*
+import javax.inject.Inject
 
-class FeedAdapter(
+class FeedAdapter constructor(
     postList: List<PostEntity>,
-    context: Context
+    context: Context,
+    repository: PostRepository
 ): RecyclerView.Adapter<FeedAdapter.FeedViewHolder>(), ItemTouchHelperAdapter {
-    private var postList: List<PostEntity>
+    private var postList: MutableList<PostEntity>
     private val context: Context
+    private val repository: PostRepository
 
     init {
-        this.postList = postList
+        this.postList = postList.toMutableList()
         this.context = context
+        this.repository = repository
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FeedViewHolder {
@@ -79,8 +83,12 @@ class FeedAdapter(
         TODO("Not yet implemented")
     }
 
+    @OptIn(DelicateCoroutinesApi::class)
     override fun onItemDismiss(position: Int) {
-        TODO("Not yet implemented")
+        GlobalScope.launch {
+            repository.deletePost(postList[position])
+            postList.removeAt(position)
+        }
     }
 
 }
