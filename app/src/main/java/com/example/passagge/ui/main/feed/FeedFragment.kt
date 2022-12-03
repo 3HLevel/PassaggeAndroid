@@ -29,15 +29,16 @@ class FeedFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        feedAdapter = FeedAdapter(requireContext(), repository)
         binding = FragmentFeedBinding.inflate(layoutInflater)
 
         binding.fragmentFeedRecycler.layoutManager =
             LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false)
 
-        viewModel.postList.observe(viewLifecycleOwner) {
-            feedAdapter = FeedAdapter(it, requireContext(), repository)
-            binding.fragmentFeedRecycler.adapter = feedAdapter
+        binding.fragmentFeedRecycler.adapter = feedAdapter
 
+        viewModel.postList.observe(viewLifecycleOwner) {
+            feedAdapter.updateData(it)
             val callback: ItemTouchHelper.Callback = FeedTouchHelperCallback(feedAdapter)
             val touchHelper: ItemTouchHelper = ItemTouchHelper(callback)
             touchHelper.attachToRecyclerView(binding.fragmentFeedRecycler)
@@ -50,4 +51,8 @@ class FeedFragment : Fragment() {
         return binding.root
     }
 
+    override fun onResume() {
+        super.onResume()
+        viewModel.refreshData()
+    }
 }

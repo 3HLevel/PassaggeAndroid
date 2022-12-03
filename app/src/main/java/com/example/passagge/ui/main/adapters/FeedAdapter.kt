@@ -14,16 +14,14 @@ import kotlinx.coroutines.*
 import javax.inject.Inject
 
 class FeedAdapter constructor(
-    postList: List<PostEntity>,
     context: Context,
     repository: PostRepository
 ): RecyclerView.Adapter<FeedAdapter.FeedViewHolder>(), ItemTouchHelperAdapter {
-    private var postList: MutableList<PostEntity>
+    private var postList: List<PostEntity> = ArrayList()
     private val context: Context
     private val repository: PostRepository
 
     init {
-        this.postList = postList.toMutableList()
         this.context = context
         this.repository = repository
     }
@@ -33,6 +31,11 @@ class FeedAdapter constructor(
             .inflate(R.layout.item_post, parent, false)
         return FeedViewHolder(view, postList)
 
+    }
+
+    fun updateData(newPostList: List<PostEntity>) {
+        this.postList = newPostList
+        notifyDataSetChanged()
     }
 
     override fun onBindViewHolder(holder: FeedViewHolder, position: Int) {
@@ -83,11 +86,10 @@ class FeedAdapter constructor(
         TODO("Not yet implemented")
     }
 
-    @OptIn(DelicateCoroutinesApi::class)
     override fun onItemDismiss(position: Int) {
-        GlobalScope.launch {
+        CoroutineScope(Dispatchers.Main + SupervisorJob()).launch {
             repository.deletePost(postList[position])
-            postList.removeAt(position)
+            updateData(repository.getPostList())
         }
     }
 

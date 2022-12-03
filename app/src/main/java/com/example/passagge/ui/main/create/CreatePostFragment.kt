@@ -10,12 +10,13 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
 import com.example.passagge.R
 import com.example.passagge.databinding.FragmentCreatePostBinding
+import com.example.passagge.ui.main.feed.FeedViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class CreatePostFragment : Fragment() {
 
-    private val viewModel: CreatePostViewModel by viewModels()
+    private val viewModel: FeedViewModel by viewModels()
     private lateinit var binding: FragmentCreatePostBinding
 
     override fun onCreateView(
