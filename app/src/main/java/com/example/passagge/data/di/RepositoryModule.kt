@@ -19,7 +19,7 @@ class RepositoryModule {
 
     @Singleton
     @Provides
-    fun provideGamesLibraryRepository(
+    fun providePostRepository(
         /*cheapSharkExternalDataSource: CheapSharkExternalDataSource,*/
         postLocalDataSource: PostLocalDataSource
     ): PostRepository =

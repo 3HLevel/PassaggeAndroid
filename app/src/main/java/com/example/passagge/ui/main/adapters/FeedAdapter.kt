@@ -6,22 +6,24 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.passagge.R
+import com.example.passagge.data.api.PostRepository
 import com.example.passagge.data.local.post.room.dao.PostEntity
-import java.util.*
+import kotlinx.coroutines.*
+import javax.inject.Inject
 
-class FeedAdapter(
-    postList: List<PostEntity>,
-    context: Context
+class FeedAdapter constructor(
+    context: Context,
+    repository: PostRepository
 ): RecyclerView.Adapter<FeedAdapter.FeedViewHolder>(), ItemTouchHelperAdapter {
-    private var postList: List<PostEntity>
+    private var postList: List<PostEntity> = ArrayList()
     private val context: Context
+    private val repository: PostRepository
 
     init {
-        this.postList = postList
         this.context = context
+        this.repository = repository
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FeedViewHolder {
@@ -29,6 +31,11 @@ class FeedAdapter(
             .inflate(R.layout.item_post, parent, false)
         return FeedViewHolder(view, postList)
 
+    }
+
+    fun updateData(newPostList: List<PostEntity>) {
+        this.postList = newPostList
+        notifyDataSetChanged()
     }
 
     override fun onBindViewHolder(holder: FeedViewHolder, position: Int) {
@@ -80,7 +87,10 @@ class FeedAdapter(
     }
 
     override fun onItemDismiss(position: Int) {
-        TODO("Not yet implemented")
+        CoroutineScope(Dispatchers.Main + SupervisorJob()).launch {
+            repository.deletePost(postList[position])
+            updateData(repository.getPostList())
+        }
     }
 
 }

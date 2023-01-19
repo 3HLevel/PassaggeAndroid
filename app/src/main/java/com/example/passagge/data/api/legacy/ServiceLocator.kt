@@ -1,4 +1,4 @@
-//package com.example.passagge.data
+package com.example.passagge.data.api.legacy//package com.example.passagge.data
 //
 //import com.example.passagge.data.api.GamesLibraryModel
 //import com.example.passagge.data.api.NetworkService

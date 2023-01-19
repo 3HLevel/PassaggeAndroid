@@ -1,4 +1,4 @@
-//package com.example.passagge.data.api
+package com.example.passagge.data.api.legacy//package com.example.passagge.data.api
 //
 //import com.example.passagge.data.api.retrofit.GamesLibraryApiService
 //import com.google.gson.Gson

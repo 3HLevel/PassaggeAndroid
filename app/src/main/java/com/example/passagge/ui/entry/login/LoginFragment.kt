@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.example.passagge.R
 import com.example.passagge.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {
@@ -22,11 +24,17 @@ class LoginFragment : Fragment() {
             viewModel.navToReg(binding.root)
         }
         binding.fragmentLoginFirstButton.setOnClickListener {
-            viewModel.signInUser(
-                binding.fragmentLoginEmail.text.toString(),
-                binding.fragmentLoginPassword.text.toString(),
-                binding.root
-            )
+            val email = binding.fragmentLoginEmail.text.toString()
+            val password = binding.fragmentLoginPassword.text.toString()
+            /*if (email != "" && password != "") {
+                viewModel.signInUser(
+                    email,
+                    password,
+                    binding.root
+                )
+            }
+            */
+            findNavController().navigate(R.id.mainActivity)
         }
         return binding.root
     }

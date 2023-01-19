@@ -57,7 +57,7 @@
                 android:fontFamily="@font/rubik_regular"
                 android:textSize="@dimen/_8ssp"
                 android:textColor="@color/colorTextGray"
-                android:background="@drawable/bg_under_text"
+                android:background="@drawable/shape_under_text"
                 tools:text="10:10"
                 android:paddingHorizontal="@dimen/_3sdp"
                 android:paddingVertical="@dimen/_1sdp"/>
@@ -124,7 +124,7 @@
                 android:id="@+id/item_post__button_like"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
-                android:background="@drawable/bg_under_text"
+                android:background="@drawable/shape_under_text"
                 android:padding="5dp"
                 android:clickable="true"
                 android:foreground="?attr/selectableItemBackground"
@@ -155,7 +155,7 @@
                 android:layout_height="25dp"
                 android:layout_marginStart="6dp"
                 android:layout_toEndOf="@id/item_post__button_like"
-                android:background="@drawable/bg_under_text"
+                android:background="@drawable/shape_under_text"
                 android:foreground="?attr/selectableItemBackground"
                 android:padding="5dp"
                 app:srcCompat="@drawable/ic_share" />

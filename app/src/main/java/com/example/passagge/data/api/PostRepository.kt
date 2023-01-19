@@ -19,4 +19,8 @@ class PostRepository constructor(
     suspend fun setPost(post: PostEntity) {
         return postLocalDataSource.savePost(post)
     }
+
+    suspend fun deletePost(post: PostEntity) {
+        return postLocalDataSource.deletePost(post)
+    }
 }

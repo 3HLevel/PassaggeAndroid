@@ -3,7 +3,9 @@ package com.example.passagge.ui.main.adapters
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 
-class FeedTouchHelperCallback constructor(adapter: ItemTouchHelperAdapter): ItemTouchHelper.Callback() {
+class FeedTouchHelperCallback constructor(
+    adapter: ItemTouchHelperAdapter
+): ItemTouchHelper.Callback() {
     private val mAdapter: ItemTouchHelperAdapter
 
     init {
