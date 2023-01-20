@@ -37,7 +37,6 @@ class FeedAdapter constructor(
         this.postList = newPostList
         notifyDataSetChanged()
     }
-
     override fun onBindViewHolder(holder: FeedViewHolder, position: Int) {
         val post: PostEntity = postList[position]
 
