@@ -37,6 +37,9 @@ class FeedFragment : Fragment() {
 
         binding.fragmentFeedRecycler.adapter = feedAdapter
 
+        // будет ли работать observe если создавать посты в том же фрагменте, при у словии
+        // что observe находиться в методе onCreateView
+
         viewModel.postList.observe(viewLifecycleOwner) {
             feedAdapter.updateData(it)
             val callback: ItemTouchHelper.Callback = FeedTouchHelperCallback(feedAdapter)
