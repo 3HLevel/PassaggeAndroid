@@ -4,22 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".SearchFragment">
+    tools:context=".ui.main.search.SearchFragment">
 
-    <SearchView
+    <EditText
         android:id="@+id/fragment_search__search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="15sp"
+        android:hint="Search:"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_search__recycler_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fragment_search__search_view"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/_10sdp"
+        tools:listitem="@layout/item_search_category"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

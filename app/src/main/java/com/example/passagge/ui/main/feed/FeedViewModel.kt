@@ -8,13 +8,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.findNavController
 import com.example.passagge.R
-import com.example.passagge.data.api.PostRepository
+import com.example.passagge.data.repository.PostRepository
 import com.example.passagge.data.local.post.room.dao.PostEntity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.*
-import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.channels.trySendBlocking
-import okhttp3.Dispatcher
 import javax.inject.Inject
 
 @HiltViewModel

@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:paddingBottom="10dp">
+    android:paddingBottom="10dp"
+    android:paddingHorizontal="10dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -16,16 +17,17 @@
             android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/fragment_search_category__image"
+            android:id="@+id/category_item__image"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:scaleType="centerCrop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:src="@drawable/im_avatar"/>
+            android:src="@drawable/im_avatar" />
 
         <TextView
+            android:id="@+id/category_item__text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"

@@ -8,10 +8,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.passagge.R
-import com.example.passagge.data.api.PostRepository
+import com.example.passagge.data.repository.PostRepository
 import com.example.passagge.data.local.post.room.dao.PostEntity
 import kotlinx.coroutines.*
-import javax.inject.Inject
 
 class FeedAdapter constructor(
     context: Context,
@@ -20,6 +19,29 @@ class FeedAdapter constructor(
     private var postList: List<PostEntity> = ArrayList()
     private val context: Context
     private val repository: PostRepository
+
+    class FeedViewHolder(
+        view: View,
+        postList: List<PostEntity>
+    ): RecyclerView.ViewHolder(view) {
+        var imageView: ImageView
+        var description: TextView
+        var nickname: TextView
+        var time: TextView
+        init {
+            imageView = view.findViewById(R.id.item_post__main_image)
+            description = view.findViewById(R.id.item_post__description)
+            nickname = view.findViewById(R.id.item_post__nickname)
+            time = view.findViewById(R.id.item_post__time)
+            /*view.setOnClickListener {
+                val post: PostEntity = postList[layoutPosition]
+                val bundle = Bundle()
+                bundle.putSerializable("data", post)
+                view.findNavController().navigate(R.id.productInfoFragment, bundle)
+            }
+            */
+        }
+    }
 
     init {
         this.context = context
@@ -56,29 +78,6 @@ class FeedAdapter constructor(
 
     override fun getItemCount(): Int {
         return postList.size
-    }
-
-    class FeedViewHolder(
-        view: View,
-        postList: List<PostEntity>
-    ): RecyclerView.ViewHolder(view) {
-        var imageView: ImageView
-        var description: TextView
-        var nickname: TextView
-        var time: TextView
-        init {
-            imageView = view.findViewById(R.id.item_post__main_image)
-            description = view.findViewById(R.id.item_post__description)
-            nickname = view.findViewById(R.id.item_post__nickname)
-            time = view.findViewById(R.id.item_post__time)
-            /*view.setOnClickListener {
-                val post: PostEntity = postList[layoutPosition]
-                val bundle = Bundle()
-                bundle.putSerializable("data", post)
-                view.findNavController().navigate(R.id.productInfoFragment, bundle)
-            }
-            */
-        }
     }
 
     override fun onItemMove(fromPosition: Int, toPosition: Int) {

@@ -6,15 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.passagge.data.api.PostRepository
+import com.example.passagge.data.repository.PostRepository
 import com.example.passagge.databinding.FragmentFeedBinding
 import com.example.passagge.ui.main.adapters.FeedAdapter
 import com.example.passagge.ui.main.adapters.FeedTouchHelperCallback
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @AndroidEntryPoint

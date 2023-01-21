@@ -1,6 +1,7 @@
 package com.example.passagge.data.di
 
 import com.example.passagge.data.api.retrofit.CheapSharkApiService
+import com.example.passagge.data.api.retrofit.rawg.RawgApiService
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
@@ -17,7 +18,8 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 class RetrofitModule {
-    private val baseURL: String = "https://cheapshark-game-deals.p.rapidapi.com"
+//    private val baseURL: String = "https://cheapshark-game-deals.p.rapidapi.com"
+    private val baseURL: String = "https://api.rawg.io/api/"
 
     @Provides
     @Singleton
@@ -50,6 +52,10 @@ class RetrofitModule {
     }
 
     @Provides
-    fun provideApiService(retrofit: Retrofit): CheapSharkApiService =
+    fun provideCheapSharkApiService(retrofit: Retrofit): CheapSharkApiService =
         retrofit.create(CheapSharkApiService::class.java)
+
+    @Provides
+    fun provideRawgApiService(retrofit: Retrofit): RawgApiService =
+        retrofit.create(RawgApiService::class.java)
 }
