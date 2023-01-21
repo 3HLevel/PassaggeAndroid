@@ -1,10 +1,12 @@
 package com.example.passagge.ui.main.create
 
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
@@ -27,8 +29,9 @@ class CreatePostFragment : Fragment() {
         binding.fragmentCreatePostCancel.setOnClickListener {
             binding.root.findNavController().popBackStack()
         }
+
         binding.fragmentCreatePostConfirm.setOnClickListener {
-            viewModel.createPost(binding.fragmentCreatePostEditText)
+            viewModel.createPost(binding.fragmentCreatePostEditText, requireContext().applicationContext)
         }
         return binding.root
     }

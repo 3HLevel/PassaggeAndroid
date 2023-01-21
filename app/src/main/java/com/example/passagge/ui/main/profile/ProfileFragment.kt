@@ -27,14 +27,7 @@ class ProfileFragment : Fragment() {
         }
 
         binding.fragmentProfileAvatar.setOnClickListener {
-//            val imgFile = File(Media
-//                .queryImages(requireContext().contentResolver).get(0).contentUri)
-//            if (imgFile.exists()) {
-//                val imgBitmap = BitmapFactory.decodeFile(imgFile.absolutePath)
-//                binding.fragmentProfileAvatar.setImageBitmap(imgBitmap)
-//            }
-//            requireContext().contentResolver
-            viewModel.loadImages()
+
         }
         return binding.root
     }

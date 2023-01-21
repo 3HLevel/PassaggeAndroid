@@ -1,11 +1,13 @@
 package com.example.passagge.ui.main.adapters
 
 import android.content.Context
+import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
 import com.example.passagge.R
 import com.example.passagge.data.repository.PostRepository
@@ -65,6 +67,9 @@ class FeedAdapter constructor(
         holder.description.text = post.description
         holder.nickname.text = post.nickname
         holder.time.text = post.time
+//        holder.imageView.setImageURI(post.imageUrl?.toUri())
+        val drw = Drawable.createFromPath(post.imageUrl)
+        holder.imageView.setImageDrawable(drw)
 
         /*try {
             val ims = context.assets.open(post.imageUrl.toString())
